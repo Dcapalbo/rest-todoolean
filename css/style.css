@@ -1,0 +1,12 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  margin: auto;
+  background-color: lightblue;
+}
+/* basic values */
+/* specific style values */
