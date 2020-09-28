@@ -5,8 +5,16 @@
 }
 body {
   width: 100%;
-  margin: auto;
   background-color: lightblue;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+li {
+  list-style: none;
+  padding: 20px;
+  margin: 20px;
 }
 /* basic values */
 /* specific style values */

@@ -13,9 +13,13 @@
    <title>todoolean</title>
   </head>
   <body>
-  <script id="list-template" type="text/x-handlebars-template">
+   <ul id="todo_list">
+    <li><input class="input_search" type="text" name="input" value=""></li>
+    <li><button class="insert_value" type="button" name="button">insert data</button></li>
+   </ul>
+  <script id="list_template" type="text/x-handlebars-template">
    <ul class="">
-    <li>{{title}}</p>
+    <li>{{todo_list}}</li>
    </ul>
   </script>
   <script src="js/main.js" charset="utf-8"></script>
