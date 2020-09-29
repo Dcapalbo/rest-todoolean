@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" charset="utf-8"></script>
@@ -13,15 +14,19 @@
    <title>todoolean</title>
   </head>
   <body>
-   <ul id="todo_list">
-    <li><input class="input_search" type="text" name="input" value=""></li>
-    <li><button class="insert_value" type="button" name="button">insert data</button></li>
-   </ul>
-  <script id="list_template" type="text/x-handlebars-template">
-   <ul class="">
-    <li>{{todo_list}}</li>
-   </ul>
-  </script>
+   <header>
+    <div class="todo_list_wrapper">
+     <ul id="todo_list">
+      <li><input class="text_input" type="text" name="input" value="" placeholder="search"></li>
+      <li><button class="insert_value" type="button" name="button">insert data</button></li>
+     </ul>
+    </div>
+   </header>
+   <script id="list_template" type="text/x-handlebars-template">
+    <ul>
+     <div class="list_box">{{text}}<span><i class="far fa-edit"></i></span><span><i class="fas fa-trash"></i></span></div>
+    </ul>
+   </script>
   <script src="js/main.js" charset="utf-8"></script>
   </body>
 </html>
