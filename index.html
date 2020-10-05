@@ -17,15 +17,16 @@
    <header>
     <div class="todo_list_wrapper">
      <ul id="todo_list">
-      <li><input class="text_input" type="text" name="input" value="" placeholder="search"></li>
-      <li><button class="insert_value" type="button" name="button">insert data</button></li>
+      <li><input class="submit_text" type="text" name="input" value="" placeholder="search"></li>
+      <li><button class="submit_button" type="button" name="button">insert data</button></li>
      </ul>
     </div>
    </header>
    <script id="list_template" type="text/x-handlebars-template">
-    <ul>
-     <div class="list_box">{{text}}<span><i class="far fa-edit"></i></span><span><i class="fas fa-trash"></i></span></div>
-    </ul>
+    <li id="{{id}}" class="list_box">{{text}}
+     <span class="update"><i class="far fa-edit"></i></span>
+     <span class="delete"><i class="fas fa-trash"></i></span>
+    </li>
    </script>
   <script src="js/main.js" charset="utf-8"></script>
   </body>

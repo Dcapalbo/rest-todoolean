@@ -13,7 +13,6 @@ li {
   display: inline-block;
   list-style: none;
   padding: 10px;
-  margin: 10px;
 }
 header {
   width: 100%;
@@ -33,7 +32,7 @@ header {
   background-color: crimson;
   opacity: 0.8;
 }
-.text_input {
+.submit_text {
   background-color: #fff  ;
   color: crimson;
   padding-left: 5px;
@@ -41,12 +40,12 @@ header {
   border-radius: 20px;
   cursor: pointer;
 }
-li:hover .text_input {
+li:hover .submit_text {
   transform: scale(1.2);
   transition: 1.1s;
-  font-weight: bolder;
+  font-weight: bold;
 }
-.insert_value {
+.submit_button {
   background-color: lightblue;
   color: #000;
   width: 100px;
@@ -54,19 +53,20 @@ li:hover .text_input {
   border-radius: 20px;
   cursor: pointer;
 }
-li:hover .insert_value {
+li:hover .submit_button {
   transform: scale(1.2);
   transition: 1.1s;
-  font-weight: bolder;
 }
 .list_box {
+  width: 100%;
   border: 2px solid #000;
-  padding: 10px;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 .list_box span {
   float: right;
 }
 .fa-edit, .fa-trash {
+  font-size: 18px;
   padding-left: 10px;
+  cursor: pointer;
 }
